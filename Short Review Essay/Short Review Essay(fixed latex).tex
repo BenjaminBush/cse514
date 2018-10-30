@@ -89,18 +89,44 @@ Recall that in DQN, a single agent represented by a single neural network contro
 \]
 where $A(s_{t},a_{t};\theta;\theta_{v})$ is an estimate of the advantage function given by $\sum_{i=0}^{k-1}\gamma^{i}r_{t+i}+\gamma^{k}V(s_{t+k};\theta_{v}) - V(s_{t};\theta_{v})$ where $\theta$ and $\theta_{v}$ are the parameters of the policy and value functions, respectively. The resulting architecture and training of A3C agents yields much more stable neural networks with both value-based and policy-based methods, on-policy and off-policy methods, as well as discrete and continuous domains. Because of its extreme flexibility, fast training time, and model stability, A3C has become the start of the art, go-to starting point for many deep reinforcement learning problems. 
 \section{Evaluation Criteria}
-Our evaluation criteria is relatively straightforward: because our problem is a reinforcement learning problem, we determine the performance of a given model based on the sum of rewards, which is given by the reinforcement learning environment, for a given session. Because we wish to maximize our reward, the best model will be that with the highest reward. 
+Our evaluation criteria is relatively straightforward: because our problem is a reinforcement learning problem, we determine the performance of a given model based on the sum of rewards, which is given by the reinforcement learning environment, for a given session. Because we wish to maximize our reward, the best model will be the one with the highest reward. 
 \section{Anticipated Discovery}
-blah blah blah
+As outlined in the challenge, we hope to produce an agent that can synthesize physically and physiologically accurate motion. Given that we can visualize the musculoskeletal, we can observe the muscles that need to be activated to produce a given result (i.e. running, walking, standing still). Given that none of our group members have much experience with anatomical structures of the human body, it will certainly be interesting to see what an agent can learn about the human body's muscles. 
 \section{Work Plan}
-detailed description of work plan with timelines
+The challenge provides baseline agents for the DDPG and PPO algorithms. While these baseline agents can only stand up straight for a few seconds before falling over, we having a basic implementation allows us to focus on optimizing the neural network controller architecture for each algorithm. One team member will be assigned these two algorithms, in addition to exploring the experimental datasets and producing the supervised model. The other two team members will be assigned the remaining two algorithms: DQN and A3C. For each algorithm, we will experiment with different model architectures as well as hyperparameters and select the overall model for each algorithm that yields the highest cumulative reward. We have set the expectation that all team members should be willing to help each other with their particular assignment, and all should be able to explain how each method works without much knowledge of the specific implementation details. A sample time schedule is outlined below.
+\begin{itemize}
+\item Week of 10/28 - 11/3
+\subitem Deliverables: Short Review Essay on 10/30
+\subitem Actions: Understand the Action, Observation, and Reward Spaces
+\subitem Notes: Try making custom agents and hacking the reward function. Become familiar and comfortable in reinforcement learning environment. 
+\item Week of 11/4 - 11/10
+\subitem Deliverables: None
+\subitem Actions: Focus on implementation. Team members charged with A3C and DQN should be developing their agents to produce working models. Third team member should be focused on experimental dataset. 
+\subitem Notes: Once third team member has produced a supervised model, this model can be used in all four of the RL algorithms. The sooner this model is produced, the better. Be aware of upcoming midterm progress report due next week. 
+\item Week of 11/11 - 11/17
+\subitem Deliverables: Midterm Progress Report on 11/15
+\subitem Actions: Focus at this point should be on the RL algorithms. If the supervised model was fruitful, it should be integrated. If not, it most likely is not worth spending much more time on it here. Explain these choices in the midterm progress report.
+\subitem Notes: Full steam ahead on implementation!
+\item Week of 11/18 - 11/24
+\subitem Deliverables: None
+\subitem Actions: Bug fixes, documentation, and code cleanup. Might be hard to do a lot of development without access to GPU's for training this week, so make sure that when writing the final presentation and report it will be easy to refer back to earlier work.
+\subitem Notes: This is the week of Thanksgiving break. It may be difficult to coordinate with team members during the holiday. Any potential conflicts or project issues should be documented before leaving so that they may be fully addressed when everybody returns. 
+\item Week of 11/25 - 12/1
+\subitem Deliverables: None
+\subitem Actions: Pursue other "unorthodox" approaches to get the most out of each algorithm, such as frame skipping. Okay to spend some time doing a little bit more research this week to optimize agents if they are at a good point. 
+\subitem Notes: Be aware of upcoming deadline. Start making slides for presentation and preparing paper. 
+\item Week of 12/2 - 12/12/8
+\subitem Deliverables: In-class Presentation on 12/4 and 12/6, Final Project Report on 12/6
+\subitem Actions: Practice presentation and complete final report. 
+\subitem Notes: All implementation work should be complete. Team should focus on practicing presentation and completing final report. 
+\end{itemize}
 \begin{thebibliography}{}\label{sec:TeXbooks}
 \bibitem{W} Z.Wang,T.Schaul, M.Hessel, H.Hasselt, M.Lanctot, and N.Freitas, \textit{Dueling Network Architectures for Deep Reinforcement Learning}, (NIPS2016, London, 2016).
 \bibitem{S} J.~Schulman, F.~Wolski, P.~Dhariwal, A.~Radford, O.~Klimov, \textit{Proximal Policy Optimization Algorithms}, (OpenAI, 2017).
 \bibitem{Q-learning} Watkins, Christopher J. C. H.,Dayan, Peter, \textit{Q-learning}, (Kluwer Academic Publishers).
 \bibitem{Atari with DRL}Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, Martin Riedmiller,\textit{Playing Atari with Deep Reinforcement Learning},(DeepMind Technologies,2018).
 \bibitem{Continuous}Timothy P. Lillicrap, Jonathan J. Hunt, Alexander Pritzel, Nicolas Heess, Tom Erez, Yuval Tassa, David Silver, Daan Wierstra,\textit{Continuous control with deep reinforcement learning},{DeepMind, London, UK, ICLR,2016}.
-\bibitem{Asynchronous}Volodymyr Mnih, Adrià Puigdomènech Badia, Mehdi Mirza, Alex Graves, Timothy P. Lillicrap, Tim Harley, David Silver, Koray Kavukcuoglu,\textit{Asynchronous Methods for Deep Reinforcement Learning}, (Google DeepMind, Montreal Institute for Learning Algorithms (MILA), University of Montreal, 2016)
+\bibitem{Asynchronous}Volodymyr Mnih, Adriï¿½ Puigdomï¿½nech Badia, Mehdi Mirza, Alex Graves, Timothy P. Lillicrap, Tim Harley, David Silver, Koray Kavukcuoglu,\textit{Asynchronous Methods for Deep Reinforcement Learning}, (Google DeepMind, Montreal Institute for Learning Algorithms (MILA), University of Montreal, 2016)
 \bibitem{ssgf}Ronald Williams,\textit{simple statistical gradient-following algorithms for connectionist reinforcement learning},(Northeastern University, Boston, MA, 1992)
 \bibitem{pgm}Richard S. Sutton	,David McAllester,.Satinder Singh,Yishay Mansour,\textit{Policy gradient methods for reinforcement learning with function approximation},(NIPS 1999 Denver, CO)
 

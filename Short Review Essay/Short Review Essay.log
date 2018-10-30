@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.24)  29 OCT 2018 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.24)  29 OCT 2018 19:14
 entering extended mode
 **"./Short Review Essay.tex"
 ("Short Review Essay.tex"
@@ -353,18 +353,19 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Missing character: There is no ∆ in font cmr10!
 Missing character: There is no ê in font cmr10!
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -372,79 +373,78 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
 
  []
 
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
 
-LaTeX Warning: Citation `WSHHLF' on page 2 undefined on input line 64.
+LaTeX Warning: Citation `WSHHLF' on page 3 undefined on input line 76.
 
 
-LaTeX Warning: Citation `WSHHLF' on page 2 undefined on input line 64.
-
-[2]
-
-LaTeX Warning: Citation `WSHHLF' on page 3 undefined on input line 64.
+LaTeX Warning: Citation `WSHHLF' on page 3 undefined on input line 76.
 
 
-LaTeX Warning: Citation `SWPRK' on page 3 undefined on input line 69.
+LaTeX Warning: Citation `WSHHLF' on page 3 undefined on input line 76.
+
+[3]
+
+LaTeX Warning: Citation `SWPRK' on page 4 undefined on input line 81.
 
 
-LaTeX Warning: Citation `SWPRK' on page 3 undefined on input line 69.
+LaTeX Warning: Citation `SWPRK' on page 4 undefined on input line 81.
 
 
-LaTeX Warning: Citation `SWPRK' on page 3 undefined on input line 69.
+LaTeX Warning: Citation `SWPRK' on page 4 undefined on input line 81.
 
 Missing character: There is no Œ in font cmr7!
 Missing character: There is no º in font cmr7!
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
-[3]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 ("Short Review Essay.bbl")
 
-LaTeX Warning: Citation `DBLP:journals/corr/MnihKSGAWR13' on page 4 undefined o
-n input line 99.
+LaTeX Warning: Citation `DBLP:journals/corr/MnihKSGAWR13' on page 5 undefined o
+n input line 116.
 
 
-LaTeX Warning: Citation `DBLP:journals/corr/WangFL15' on page 4 undefined on in
-put line 100.
+LaTeX Warning: Citation `DBLP:journals/corr/WangFL15' on page 5 undefined on in
+put line 117.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-[4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
  ("Short Review Essay.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 120.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
  ) 
 Here is how much of TeX's memory you used:
- 6449 strings out of 493329
- 97719 string characters out of 3139069
+ 6456 strings out of 493329
+ 97786 string characters out of 3139069
  187559 words of memory out of 3000000
  9941 multiletter control sequences out of 15000+200000
- 35813 words of font info for 72 fonts, out of 3000000 for 9000
+ 33668 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,6n,26p,2945b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,6n,26p,2941b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -458,9 +458,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on "Short Review Essay.pdf" (4 pages, 154742 bytes).
+Output written on "Short Review Essay.pdf" (5 pages, 158948 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
+ 103 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

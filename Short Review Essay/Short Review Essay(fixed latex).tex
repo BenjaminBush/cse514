@@ -89,7 +89,11 @@ Recall that in DQN, a single agent represented by a single neural network contro
 \]
 where $A(s_{t},a_{t};\theta;\theta_{v})$ is an estimate of the advantage function given by $\sum_{i=0}^{k-1}\gamma^{i}r_{t+i}+\gamma^{k}V(s_{t+k};\theta_{v}) - V(s_{t};\theta_{v})$ where $\theta$ and $\theta_{v}$ are the parameters of the policy and value functions, respectively. The resulting architecture and training of A3C agents yields much more stable neural networks with both value-based and policy-based methods, on-policy and off-policy methods, as well as discrete and continuous domains. Because of its extreme flexibility, fast training time, and model stability, A3C has become the start of the art, go-to starting point for many deep reinforcement learning problems. 
 \section{Evaluation Criteria}
-Our evaluation criteria is relatively straightforward: because our problem is a reinforcement learning problem, we determine the performance of a given model based on the sum of rewards, which is given by the reinforcement learning environment, for a given session. Because we wish to maximize our reward, the best model will be the one with the highest reward. 
+Our evaluation criteria is relatively straightforward: because our problem is a reinforcement learning problem, we determine the performance of a given model based on the sum of rewards, which is given by the reinforcement learning environment, for a given session. Because we wish to maximize our reward, the best model will be the one with the highest reward. The reward is calculated by the following
+\[
+r_{t} := 9 - |3-v_{t}|^2
+\]
+where $v$ is the horizontal velocity vector of the pelvis. In other words, the reward function incentivizes agents to run at a constant speed of 3 meters per second. 
 \section{Anticipated Discovery}
 As outlined in the challenge, we hope to produce an agent that can synthesize physically and physiologically accurate motion. Given that we can visualize the musculoskeletal, we can observe the muscles that need to be activated to produce a given result (i.e. running, walking, standing still). Given that none of our group members have much experience with anatomical structures of the human body, it will certainly be interesting to see what an agent can learn about the human body's muscles. 
 \section{Work Plan}
